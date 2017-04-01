@@ -1,6 +1,9 @@
-const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
-module.exports = {
-	webpack: (config, { dev }) => {
+const prod = process.env.NODE_ENV === 'production';
+
+if(!prod) {
+	const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+	module.exports = {
+		webpack: (config, { dev }) => {
 		// Perform customizations to config
 		config.plugins.push(
 			new BundleAnalyzerPlugin({
@@ -12,4 +15,5 @@ module.exports = {
 		)
 		return config
 	}
+}
 }
