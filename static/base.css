@@ -1,0 +1,51 @@
+html {
+	font-size: 62.5%;
+	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+#skip a, .sr {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+#skip a:focus {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+}
+
+body {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+p, a {
+	font-size: 1.6rem;
+}
+
+a:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47;
+}
+
+.column >.item >.link {
+	text-decoration: none;
+	cursor: pointer;
+}
