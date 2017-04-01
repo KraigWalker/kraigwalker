@@ -4,7 +4,7 @@
 		"dev": "next",
 		"build": "next build",
 		"prestart": "npm run build",
-		"start": "next start --production",
+		"start": "next start --production -p $PORT",
 		"bundle:view": "webpack-bundle-analyzer .next/stats.json"
 	},
 	"dependencies": {
